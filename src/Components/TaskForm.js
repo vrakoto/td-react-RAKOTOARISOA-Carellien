@@ -1,6 +1,4 @@
-// TaskForm.js
 import React, { useState } from 'react';
-// import './style.css';
 
 const TaskForm = ({ addTask }) => {
   const [taskText, setTaskText] = useState('');

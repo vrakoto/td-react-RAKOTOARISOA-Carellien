@@ -1,6 +1,6 @@
 // TaskList.js
 import React from 'react';
-// import './style.css';
+import './style.css';
 
 const TaskList = ({ tasks, toggleTaskCompletion }) => {
   return (
@@ -9,7 +9,7 @@ const TaskList = ({ tasks, toggleTaskCompletion }) => {
         <li
           key={index}
           onClick={() => toggleTaskCompletion(index)}
-          style={{ textDecoration: task.completed ? 'line-through' : 'none' }}
+        //   style={{ textDecoration: task.completed ? 'line-through' : 'none' }}
           className={task.completed ? 'completed' : ''}
           data-cy="task-item"
         >
